@@ -2,8 +2,10 @@
 ## 創建資料庫:CREATE DATABASE databasename;
 ## 使用資料庫:USE databasename;
 ## 建立資料表:CREATE TABLE tablename(variable type);
-1.1 type:VARCHAR,DATE,SMALLINT,CHAR,INT
-1.2 AUTO_INCREMENT NOT NULL PRIMARY KEY
+1.1 type:VARCHAR,DATE,SMALLINT,CHAR,INT  
+
+1.2 AUTO_INCREMENT NOT NULL PRIMARY KEY  
+
 1.3 CHECK (variable IN (指定值))
 1.4 CONSTRAINT primarykeyname PRIMARY KEY (組合鍵variable)
 1.5 CONSTRAINT foreignkeyname FOREIGN KEY (variable) REFERENCES tablename (variable)
