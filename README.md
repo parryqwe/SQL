@@ -33,6 +33,12 @@
 2.7 RENAME TO newtablename  
 
 ## 更改資料:UPDATE tablename SET variable=指定值 WHERE variable=指定值;
+3.1 CASE WHEN variable=指定值 THEN variable=指定值 ELSE variable=指定值  
+## 選取資料:SELECT variable FROM tablename WHERE variable=指定值;
+4.1 時間資料:DATE_FORMAT(variable,'%M','%Y')
+4.2 字串資料:RIGHT(variable,取值數量),SUBSTRING_INDEX(variable,切割符號,選取位置)
+## 刪除資料:DELETE FROM WHERE variable=指定值;
+
 
 
 
