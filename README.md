@@ -78,8 +78,8 @@
 
 
 ## 設定腳色
-9.1 CREATE ROLE rolename;
-9.2 DROP ROLE rolename;
+9.1 CREATE ROLE rolename;  
+9.2 DROP ROLE rolename;  
 ## 設定暫時資料表CREATE TEMPORARY TABLE tablename (variable type);or CREATE TEMPORARY TABLE tablename AS 
-10.1 SELECT(CAST(text or number AS type));
-10.2 SELECT CURRENT_USER;,SELECT CURRENT_DATE;,SELECT CURRENT_TIME;
+10.1 SELECT(CAST(text or number AS type));  
+10.2 SELECT CURRENT_USER;,SELECT CURRENT_DATE;,SELECT CURRENT_TIME;  
