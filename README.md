@@ -46,7 +46,7 @@
 ## 刪除視觀表: DROP VIEW viewname;
 ## 建立索引:CREATE INDEX indexname ON tablename(variable)
 ## 分組資料:GROUP BY variable 搭配HAVING
-## 排序資料:ORDER BY variable DESC or ORDER BY variable ASC 搭配LIMIT
+## 排序資料:ORDER BY variable DESC or ORDER BY variable ASC 搭配LIMIT OFFSET
 ## 統計量:COUNT,SUM,AVG,MAX,MIN,YEAR,CONCAT(variable,variable),LENGTH
 ## 資料集合併:
 5.1 UNION,UNION ALL,INTERSECT,MINU  
