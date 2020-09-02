@@ -83,3 +83,18 @@
 ## 設定暫時資料表CREATE TEMPORARY TABLE tablename (variable type);or CREATE TEMPORARY TABLE tablename AS 
 10.1 SELECT(CAST(text or number AS type));  
 10.2 SELECT CURRENT_USER;,SELECT CURRENT_DATE;,SELECT CURRENT_TIME;  
+
+## Leetcode
+11.1 
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT   
+BEGIN  
+DECLARE M INT;  
+SET M = N-1;  
+  RETURN (  
+      # Write your MySQL query statement below.   
+      SELECT DISTINCT Salary  
+      FROM Employee  
+      ORDER BY Salary DESC  
+      LIMIT 1 OFFSET M  
+  );  
+END  
