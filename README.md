@@ -115,3 +115,8 @@ WHERE
                 AND e1.DepartmentId = e2.DepartmentId  
         )  
 ;  
+11.3
+select   
+      score  
+      , dense_rank() over(order by score desc) as "Rank"  
+from scores;   
