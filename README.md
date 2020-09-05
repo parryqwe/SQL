@@ -120,3 +120,6 @@ select
       score  
       , dense_rank() over(order by score desc) as "Rank"  
 from scores;   
+11.4
+Select w1.id AS Id From Weather as w1,Weather as w2  
+WHERE DATEDIFF(w1.recordDate,w2.recordDate)=1 AND w1.Temperature>w2.Temperature;  
