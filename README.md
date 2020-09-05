@@ -123,3 +123,12 @@ from scores;
 11.4
 Select w1.id AS Id From Weather as w1,Weather as w2  
 WHERE DATEDIFF(w1.recordDate,w2.recordDate)=1 AND w1.Temperature>w2.Temperature;  
+11.5
+select request_at as Day,  
+round(sum(case when status = 'cancelled_by_driver' then 1  
+when status='cancelled_by_client' then 1 else 0 end)/count(*),2) as 'Cancellation Rate'  
+from trips  
+where request_at between "2013-10-01" and "2013-10-03" and  
+client_id not in (select users_id from users where banned = 'Yes') and  
+driver_id not in (select users_id from users where banned = 'Yes')  
+group by request_at;  
