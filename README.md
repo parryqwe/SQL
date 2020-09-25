@@ -83,7 +83,8 @@
 ## 設定暫時資料表CREATE TEMPORARY TABLE tablename (variable type);or CREATE TEMPORARY TABLE tablename AS 
 10.1 SELECT(CAST(text or number AS type));  
 10.2 SELECT CURRENT_USER;,SELECT CURRENT_DATE;,SELECT CURRENT_TIME;  
-
+## 選擇從10到15的記錄
+11.1 select top 5 * from (select top 15 * from table order by id asc) table_別名 order by id desc  
 ## Leetcode
 11.1  
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT   
